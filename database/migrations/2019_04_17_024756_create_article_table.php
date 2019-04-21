@@ -19,6 +19,8 @@ class CreateArticleTable extends Migration
             $table->integer('penulis_id');
             $table->string('kategori_id');
             $table->string('tag_id');
+            $table->enum('publish_status',['published', 'drafted']); // Status Publikasi
+            $table->integer('published_id')->nullable(); // Oleh (Published by) ('user_id')
             $table->text('isi');
             $table->timestamps();
         });
