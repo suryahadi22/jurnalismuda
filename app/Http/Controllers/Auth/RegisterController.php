@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Auth; // Jika ingin menggunakan fitur auth
 
 class RegisterController extends Controller
 {
@@ -28,7 +29,14 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/register/buat-profil';
+    // protected $redirectTo = '/register/buat-profil';
+    protected function redirectTo()
+    {
+        // return User::route('buat_profil')->with('id', $id);
+        $user = Auth::user()->id;
+        return route('buat_profil', compact('user'));
+    }
+
 
     /**
      * Create a new controller instance.
