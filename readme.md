@@ -5,7 +5,7 @@ Selamat datang, team developer dari Jangkrik.Online, ini adalah sebuah *platform
 Project ini kita buat sebaik dan *tanpa bug* kalau bisa
 
 > Writter By : [Suryahadi Eko Hanggoro
-](https://suryahadi.com)
+](https://suryahadi.com) and Assistant Coding Naka.
 > For [Jangkrik.Online](https://jangkrik.online) -> [JurnalisMuda](https://jurnalismuda.com)
 
 *Platform ini menggunakan Laravel, dan berlisensi* MIT
