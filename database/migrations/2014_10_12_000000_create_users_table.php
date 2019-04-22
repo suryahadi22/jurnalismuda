@@ -21,6 +21,23 @@ class CreateUsersTable extends Migration
             $table->enum('level_access', ['standart', 'moderator', 'admin'])->default('standart');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('avatar')->nullable(); // DATA FOTO PROFIL
+            $table->string('jobs')->nullable(); // Pekerjaan
+            $table->string('jobs_where')->nullable(); // Kerja dimana?
+            $table->string('social_facebook')->nullable();
+            $table->string('social_twitter')->nullable();
+            $table->string('social_instagram')->nullable();
+            $table->string('social_linkedin')->nullable();
+            $table->string('social_youtube')->nullable();
+            $table->string('contact_phone_number')->nullable();
+            $table->string('contact_line')->nullable();
+            $table->string('address_line1')->nullable();
+            $table->string('address_line2')->nullable();
+            $table->string('address_city')->nullable();
+            $table->string('address_province')->nullable();
+            $table->integer('address_zipcode')->nullable();
+            $table->enum('sex', ['Laki-laki', 'Perempuan'])->nullable();
+            $table->timestamp('birthday')->nullable();
             $table->enum('account_status', ['active', 'inactive'])->default('active');
             $table->rememberToken();
             $table->timestamps();
