@@ -35,24 +35,68 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
-    <!-- Bootstrap Core Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    
+    @if ($judul === 'Buat Profil Kamu')
+    {{-- Penambahan Khusus Disini Cok --}}
+    {{-- Tentang Buat Profil Baru --}}
+        
+        <!-- Bootstrap Core Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Waves Effect Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/node-waves/waves.css" rel="stylesheet" />
+        <!-- Waves Effect Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/node-waves/waves.css" rel="stylesheet" />
+    
+        <!-- Animation Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/animate-css/animate.css" rel="stylesheet" />
+    
+        <!-- Colorpicker Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+    
+        <!-- Dropzone Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/dropzone/dropzone.css" rel="stylesheet">
+    
+        <!-- Multi Select Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/multi-select/css/multi-select.css" rel="stylesheet">
+    
+        <!-- Bootstrap Spinner Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+    
+        <!-- Bootstrap Tagsinput Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+    
+        <!-- Bootstrap Select Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+    
+        <!-- noUISlider Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/nouislider/nouislider.min.css" rel="stylesheet" />
+    
+        <!-- Custom Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/css/style.css" rel="stylesheet">
+    
+        <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/css/themes/all-themes.css" rel="stylesheet" />
+    @else
+         <!-- Bootstrap Core Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Animation Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/animate-css/animate.css" rel="stylesheet" />
+        <!-- Waves Effect Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/node-waves/waves.css" rel="stylesheet" />
 
-    <!-- Morris Chart Css-->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/morrisjs/morris.css" rel="stylesheet" />
+        <!-- Animation Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Custom Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/css/style.css" rel="stylesheet">
+        <!-- Morris Chart Css-->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/morrisjs/morris.css" rel="stylesheet" />
 
-    <!-- You can choose a theme from css/themes instead of get all themes -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/css/themes/all-themes.css" rel="stylesheet" />
+        <!-- Custom Css -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/css/style.css" rel="stylesheet">
 
+        <!-- You can choose a theme from css/themes instead of get all themes -->
+        <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/css/themes/all-themes.css" rel="stylesheet" />
+
+    @endif
+
+   
 </head>
 
 <body class="theme-red">
@@ -413,8 +457,62 @@
     </section>
 
 
-
     <!-- FOOTER LOCATION -->
+    @if ($judul === 'Buat Profil Kamu')
+        {{-- Penambahan Khusus Disini --}}
+        {{-- Pembuatan Profil Keren COK --}}
+
+
+
+
+     <!-- Jquery Core Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/jquery/jquery.min.js"></script>
+
+     <!-- Bootstrap Core Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap/js/bootstrap.js"></script>
+ 
+     <!-- Select Plugin Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+ 
+     <!-- Slimscroll Plugin Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+ 
+     <!-- Bootstrap Colorpicker Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+ 
+     <!-- Dropzone Plugin Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/dropzone/dropzone.js"></script>
+ 
+     <!-- Input Mask Plugin Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+ 
+     <!-- Multi Select Plugin Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/multi-select/js/jquery.multi-select.js"></script>
+ 
+     <!-- Jquery Spinner Plugin Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/jquery-spinner/js/jquery.spinner.js"></script>
+ 
+     <!-- Bootstrap Tags Input Plugin Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+ 
+     <!-- noUISlider Plugin Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/nouislider/nouislider.js"></script>
+ 
+     <!-- Waves Effect Plugin Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/node-waves/waves.js"></script>
+ 
+     <!-- Custom Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/js/admin.js"></script>
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/js/pages/forms/advanced-form-elements.js"></script>
+ 
+     <!-- Demo Js -->
+     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/js/demo.js"></script>
+
+
+
+    @else
+
+    {{-- Jika tidak ada definisi khusus --}}
 
     <!-- Jquery Core Js -->
     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/jquery/jquery.min.js"></script>
@@ -431,17 +529,15 @@
     <!-- Jquery CountTo Plugin Js -->
     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/jquery-countto/jquery.countTo.js"></script>
 
-    @if ($judul === 'Buat Profil Kamu')
-        {{-- Penambahan Khusus Disini --}}
-    @endif
-
-
+    <!-- -------------------------------------------------- -->
     
     <!-- Custom Js -->
     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/js/admin.js"></script>
     
     <!-- Demo Js -->
     <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/js/demo.js"></script>
+    
+    @endif
 </body>
 
 </html>

@@ -8,7 +8,7 @@
                 <h2>Lengkapi Profil Kamu Sekarang</h2>
                 <small>Biarkan dunia mengenal anda lebih dekat</small>
             </div>
-            <div class="body">
+            <div class="body demo-masked-input">
                 <!--  REGISTRASIKAN DIRI ANDA   -->
                 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
                     <style>
