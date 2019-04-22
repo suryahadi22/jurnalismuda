@@ -28,6 +28,8 @@ Route::get('/dashboard/profil', 'ProfileController@index')->name('profil');
 
 Route::get('/register/buat-profil', 'ProfileController@create')->name('buat_profil');
 
+Route::post('register/buat-profil/store', 'ProfileController@store');
+
 Route::get('/dashboard/artikel', 'ArticleController@index')->name('artikel');
 
 Route::get('/dashboard/artikel/buat', 'ArticleController@create')->name('buat_artikel');
