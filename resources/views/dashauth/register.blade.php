@@ -92,6 +92,12 @@
                     <div class="m-t-25 m-b--5 align-center">
                         <a href="{{ route('login') }}">Kamu sudah mendaftar?</a>
                     </div><br />
+                     <!-- WAIT... THIS IS FOR VALIDATION MESSAGE -->
+                     @if ($errors->has('password'))
+                     <div class="font-underline col-pink">
+                         <p class="align-center">Password minimal harus 8 Karakter</p>
+                     </div>
+                     @endif
                     {{-- <style type="text/css">
                             :root {
                               --input-padding-x: 1.5rem;
@@ -212,6 +218,7 @@
                         <div class="align-center">
                         <br />
                         <small>Copyright &copy; 2019 Jangkrik.Online</small>
+                        </div>
                     </div>
                 </form>
             </div>
