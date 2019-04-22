@@ -23,21 +23,7 @@ class User extends Authenticatable
         'full_name',
         'username',
         'email',
-        'password',
-        'avatar',
-        'jobs',
-        'jobs_where',
-        'contact_phone',
-        'address_line1',
-        'address_line2',
-        'address_city',
-        'address_province',
-        'address_zipcode',
-        // 'sex',
-        'birthday',
-        
-        // SOCIAL MEDIA INSERT HERE
-        
+        'password'
     ];
 
     /**
