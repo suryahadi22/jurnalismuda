@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
-     <!-- Special icon social media -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    {{-- <!-- Special icon social media --> DISABLE SEMENTARA KARENA ADA PROSES KONSTRUKI
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> --}}
 
 
     <!-- Bootstrap Core Css -->
@@ -92,7 +92,7 @@
                     <div class="m-t-25 m-b--5 align-center">
                         <a href="{{ route('login') }}">Kamu sudah mendaftar?</a>
                     </div><br />
-                    <style type="text/css">
+                    {{-- <style type="text/css">
                             :root {
                               --input-padding-x: 1.5rem;
                               --input-padding-y: .75rem;
@@ -208,7 +208,7 @@
                         <div>
                              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Daftar dengan Google</button>
                              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Daftar dengan Facebook</button>
-                        </div>
+                        </div> --}}
                         <div class="align-center">
                         <br />
                         <small>Copyright &copy; 2019 Jangkrik.Online</small>

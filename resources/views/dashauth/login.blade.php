@@ -12,13 +12,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
-     <!-- Special icon social media -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    {{-- <!-- Special icon social media -->  DISABLE SEMENTARA KARENA ADA PROSES REKONSTRUKSI
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> --}}
 
 
     <!-- Bootstrap Core Css -->
     <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
-
     <!-- Waves Effect Css -->
     <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/node-waves/waves.css" rel="stylesheet" />
 
@@ -90,7 +89,7 @@
                     </div>
                     @endif
 
-                    <style type="text/css">
+                    {{-- <style type="text/css">
                             :root {
                               --input-padding-x: 1.5rem;
                               --input-padding-y: .75rem;
@@ -206,7 +205,7 @@
                         <div>
                              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Masuk dengan Google</button>
                              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Masuk dengan Facebook</button>
-                        </div>
+                        </div> --}}
 
                     <div class="align-center">
                         <br />
