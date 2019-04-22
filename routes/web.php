@@ -12,9 +12,13 @@
 |
 */
 
+// FRONT PAGE
+
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
+
+// DASHBOARD PAGE
 
 Auth::routes();
 
