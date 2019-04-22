@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('avatar')->nullable(); // DATA FOTO PROFIL
             $table->string('jobs')->nullable(); // Pekerjaan
-            $table->string('jobs_where')->nulable(); // Kerja dimana?
+            $table->string('jobs_where')->nullable(); // Kerja dimana?
             $table->string('social_facebook')->nullable();
             $table->string('social_twitter')->nullable();
             $table->string('social_instagram')->nullable();
