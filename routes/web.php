@@ -28,7 +28,7 @@ Route::get('/dashboard/profil', 'ProfileController@index')->name('profil');
 
 Route::get('/register/buat-profil/{id}', 'ProfileController@create')->name('buat_profil');
 
-Route::post('/dashboard/profil/update/{id}', ['as' => 'update_process_profile', 'uses' => 'ProfileController@update']);
+Route::post('/register/buat-profil/store/{id}', ['as' => 'update_process_profile', 'uses' => 'ProfileController@store']);
 
 Route::get('/dashboard/artikel', 'ArticleController@index')->name('artikel');
 

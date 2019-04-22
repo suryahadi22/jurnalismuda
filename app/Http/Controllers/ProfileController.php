@@ -48,44 +48,11 @@ class ProfileController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, $id)
     {
         //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //Menampilkan data Profil
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        // Memasukkan data dari inputan user
-        $this->validate($request, [
+         // Memasukkan data dari inputan user
+         $this->validate($request, [
             'avatar' => 'nullable',
             'jobs' => 'required',
             'jobs_where' => 'required',
@@ -121,7 +88,41 @@ class ProfileController extends Controller
             $tambahkan->social_instagram = $request['social_instagram'];
             $tambahkan->social_linkedin = $request['social_linkedin'];
             $tambahkan->social_youtube = $request['social_youtube'];
-            $tambahkan->update();
+            $tambahkan->save();
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //Menampilkan data Profil
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+       // Comming Soon
     }
 
     /**
