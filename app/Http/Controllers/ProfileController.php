@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use App\Profile;
 
 class ProfileController extends Controller
 {
@@ -67,7 +67,7 @@ class ProfileController extends Controller
             'social_youtube' => 'nullable'
             ]);
 
-            $tambahkan = new User();
+            $tambahkan = User()::where('id', $id)->first();
             $tambahkan->jobs = $request['jobs'];
             $tambahkan->jobs_where = $request['jobs_where'];
             $tambahkan->contact_phone = $request['contact_phone'];
