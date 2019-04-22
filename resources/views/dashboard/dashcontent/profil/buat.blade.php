@@ -92,7 +92,7 @@
                     </style>
                     <body>
 
-                    <form id="regForm" class="animated bounce" action="{{ url('register/buat-profil/store') }}" method="POST">
+                    <form id="regForm" class="animated bounce" action="{{ url('/dashboard/profil/update/', $user->id) }}" method="POST">
                     {{-- Berulang-ulang gunakan class="animated infinite bounce" --}}
                     <!-- One "tab" for each step in the form: -->
                     {!! csrf_field() !!}
