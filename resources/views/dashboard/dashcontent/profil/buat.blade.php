@@ -92,7 +92,7 @@
                     </style>
                     <body>
 
-                    <form id="regForm" class="animated bounce" action="{{ url('register/buat-profil/store') }}">
+                    <form id="regForm" class="animated bounce" action="{{ url('register/buat-profil/store') }}" method="POST">
                     {{-- Berulang-ulang gunakan class="animated infinite bounce" --}}
                     <!-- One "tab" for each step in the form: -->
                     {!! csrf_field() !!}
@@ -124,7 +124,7 @@
                                     <i class="material-icons">date_range</i>
                                 </span>
                                 <div class="form-line">
-                                    <input type="text" class="form-control date" placeholder="Ex: 30/07/2016">
+                                    <input type="text" name="birthday" class="form-control date" placeholder="Ex: 30/07/2016">
                                 </div>
                             </div>
                         </p>
