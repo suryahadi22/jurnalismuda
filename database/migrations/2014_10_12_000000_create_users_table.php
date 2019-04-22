@@ -30,7 +30,6 @@ class CreateUsersTable extends Migration
             $table->string('social_linkedin')->nullable();
             $table->string('social_youtube')->nullable();
             $table->string('contact_phone_number')->nullable();
-            $table->string('contact_email')->nullable();
             $table->string('contact_line')->nullable();
             $table->string('address_line1')->nullable();
             $table->string('address_line2')->nullable();
