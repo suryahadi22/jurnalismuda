@@ -29,11 +29,11 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(User $id)
+    public function create($id)
     {
         // Santai, ini digunakan sebagai halaman untuk membuat profil
         // Atau, ini adalah halaman yang digunakan saat user pertama kali mendaftar
-        $user = User::where('id', $id)->first();
+        $user = User::find($id);
         return view('dashboard.dashcontent.profil.buat')
         ->with([
             'judul' => 'Buat Profil Kamu',
