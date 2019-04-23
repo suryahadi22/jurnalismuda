@@ -20,11 +20,7 @@ class ProfileController extends Controller
      */
     public function index() // Halaman Index
     {
-        return view('dashboard.dashcontent.profil')
-        ->with([
-        'judul' => 'Profil Saya',
-        'cok_plugins' => 'standart',
-        ]);
+        //
     }
 
     /**
@@ -105,6 +101,7 @@ class ProfileController extends Controller
      */
     public function show($id)
     {
+        //
         //Menampilkan data Profil
     }
 
@@ -116,7 +113,14 @@ class ProfileController extends Controller
      */
     public function edit($id)
     {
-        //
+        
+        $user = User::find($id);
+        return view('dashboard.dashcontent.profil')
+        ->with([
+        'judul' => 'Profil Saya',
+        'cok_plugins' => 'formulir', // Agar bisa call kebutuhan
+        'user' => $user
+        ]);
     }
 
     /**
@@ -129,6 +133,52 @@ class ProfileController extends Controller
     public function update(Request $request, $id)
     {
        // Comming Soon
+       // Memasukkan data dari inputan user
+       $this->validate($request, [
+        'avatar' => 'nullable',
+        'jobs' => 'required',
+        'jobs_where' => 'required',
+        'contact_phone_number' => 'required',
+        'address_line1' => 'required',
+        'address_line2' => 'required',
+        'address_city' => 'required',
+        'address_province' => 'required',
+        'address_zipcode' => 'required',
+        'sex' => 'required',
+        'birthday' => 'required|date',
+        // Here is Social Networking input Proccess
+        'social_facebook' => 'nullable',
+        'social_twitter' => 'nullable',
+        'social_instagram' => 'nullable',
+        'social_linkedin' => 'nullable',
+        'social_youtube' => 'nullable'
+        ]);
+
+        $gantikan = User::where('id', $id)->first();
+        $gantikan->jobs = $request['jobs'];
+        $gantikan->jobs_where = $request['jobs_where'];
+        $gantikan->contact_phone_number = $request['contact_phone_number'];
+        $gantikan->address_line1 = $request['address_line1'];
+        $gantikan->address_line2 = $request['address_line2'];
+        $gantikan->address_city = $request['address_city'];
+        $gantikan->address_province = $request['address_province'];
+        $gantikan->address_zipcode = $request['address_zipcode'];
+        $gantikan->sex = $request['sex'];
+        $gantikan->birthday = $request['birthday'];
+        $gantikan->social_facebook = $request['social_facebook'];
+        $gantikan->social_twitter = $request['social_twitter'];
+        $gantikan->social_instagram = $request['social_instagram'];
+        $gantikan->social_linkedin = $request['social_linkedin'];
+        $gantikan->social_youtube = $request['social_youtube'];
+
+        $file       = $request->file('avatar');
+        $fileName   = $file->getClientOriginalName();
+        $request->file('avatar')->move("/data/user/avatar", $fileName);
+
+        $gantikan->avatar = $fileName;
+        $gantikan->save();
+
+        return redirect()->to('/dashboard/profil');
     }
 
     /**

@@ -105,7 +105,7 @@
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="{{ route('profil') }}"><i class="material-icons">person</i>Profil Saya</a></li>
+                            <li><a href="{{ url('/dashboard/profil', $user) }}"><i class="material-icons">person</i>Profil Saya</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
