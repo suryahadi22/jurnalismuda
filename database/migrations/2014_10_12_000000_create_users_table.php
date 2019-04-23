@@ -36,9 +36,9 @@ class CreateUsersTable extends Migration
             $table->string('address_city')->nullable();
             $table->string('address_province')->nullable();
             $table->integer('address_zipcode')->nullable();
-            $table->enum('sex', ['Laki-laki', 'Perempuan'])->nullable();
-            $table->timestamp('birthday')->nullable();
-            $table->enum('account_activation', ['registered', 'not_registered'])->default('not_registered'); // Saat user tidak melengkapi pendaftaran, DEFAULT
+            $table->enum('sex', ['cowok', 'cewek'])->nullable();
+            $table->date('birthday')->nullable();
+            // $table->enum('account_activation', ['registered', 'not_registered'])->default('not_registered'); // Saat user tidak melengkapi pendaftaran, DEFAULT
             $table->enum('account_status', ['active', 'inactive'])->default('active');
             $table->rememberToken();
             $table->timestamps();

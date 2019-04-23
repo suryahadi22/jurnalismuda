@@ -25,7 +25,10 @@ class DashboardController extends Controller
     public function index()
     {
         return view('dashboard.dashcontent.home')
-        ->with('judul', 'Dashboard');
+        ->with([
+            'judul' => 'Dashboard',
+            'cok_plugins' => 'standart'
+        ]);
     }
 
 }

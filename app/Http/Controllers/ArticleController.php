@@ -24,6 +24,7 @@ class ArticleController extends Controller
         return view('dashboard.dashcontent.artikel')
         ->with([
             'judul' => 'Artikel',
+            'cok_plugins' => 'standart',
             'artikel_show' => $artikel
         ]);
     }

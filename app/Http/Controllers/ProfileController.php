@@ -21,7 +21,10 @@ class ProfileController extends Controller
     public function index() // Halaman Index
     {
         return view('dashboard.dashcontent.profil')
-        ->with('judul', 'Profil Saya');
+        ->with([
+        'judul' => 'Profil Saya',
+        'cok_plugins' => 'standart',
+        ]);
     }
 
     /**
@@ -37,6 +40,7 @@ class ProfileController extends Controller
         return view('dashboard.dashcontent.profil.buat')
         ->with([
             'judul' => 'Buat Profil Kamu',
+            'cok_plugins' => 'formulir',
             'user' => $user
             // Tambahan
         ]);
@@ -56,7 +60,7 @@ class ProfileController extends Controller
             'avatar' => 'nullable',
             'jobs' => 'required',
             'jobs_where' => 'required',
-            'contact_phone' => 'required|numeric',
+            'contact_phone_number' => 'required',
             'address_line1' => 'required',
             'address_line2' => 'required',
             'address_city' => 'required',
@@ -75,12 +79,12 @@ class ProfileController extends Controller
             $tambahkan = User::where('id', $id)->first();
             $tambahkan->jobs = $request['jobs'];
             $tambahkan->jobs_where = $request['jobs_where'];
-            $tambahkan->contact_phone = $request['contact_phone'];
+            $tambahkan->contact_phone_number = $request['contact_phone_number'];
             $tambahkan->address_line1 = $request['address_line1'];
             $tambahkan->address_line2 = $request['address_line2'];
             $tambahkan->address_city = $request['address_city'];
             $tambahkan->address_province = $request['address_province'];
-            $tambahkan->addrees_zipcode = $request['address_zipcode'];
+            $tambahkan->address_zipcode = $request['address_zipcode'];
             $tambahkan->sex = $request['sex'];
             $tambahkan->birthday = $request['birthday'];
             $tambahkan->social_facebook = $request['social_facebook'];
@@ -89,6 +93,8 @@ class ProfileController extends Controller
             $tambahkan->social_linkedin = $request['social_linkedin'];
             $tambahkan->social_youtube = $request['social_youtube'];
             $tambahkan->save();
+
+            return redirect()->to('/dashboard');
     }
 
     /**

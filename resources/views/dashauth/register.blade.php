@@ -84,7 +84,7 @@
                     </div>
                     <div class="form-group">
                         <input type="checkbox" name="terms" id="terms" class="filled-in chk-col-pink">
-                        <label for="terms">Saya telah membaca dan menyetujui <a href="javascript:void(0);">EULA</a> BlogLink.</label>
+                        <label for="terms">Saya telah membaca dan menyetujui <a href="javascript:void(0);">EULA Jangkrik.Online</a> yang terlampir untuk layanan ini.</label>
                     </div>
 
                     <button class="btn btn-block btn-lg bg-pink waves-effect" type="submit">DAFTAR</button>

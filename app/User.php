@@ -27,7 +27,7 @@ class User extends Authenticatable
         'avatar',
         'jobs',
         'jobs_where',
-        'contact_phone',
+        'contact_phone_number',
         'address_line1',
         'address_line2',
         'address_city',

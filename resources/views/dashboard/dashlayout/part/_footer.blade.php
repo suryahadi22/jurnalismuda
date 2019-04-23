@@ -1,9 +1,6 @@
-@if ($judul === 'Buat Profil Kamu')
+@if ($cok_plugins === 'formulir')
 {{-- Penambahan Khusus Disini --}}
 {{-- Pembuatan Profil Keren COK --}}
-
-
-
 
 <!-- Jquery Core Js -->
 <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/jquery/jquery.min.js"></script>
@@ -47,7 +44,6 @@
 
 <!-- Demo Js -->
 <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/js/demo.js"></script>
-
 
 
 @else

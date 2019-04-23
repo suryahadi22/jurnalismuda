@@ -10,7 +10,7 @@
                 </small>
             </div>
                 @if (Auth::user()->id == $user->id)
-                <div class="body demo-masked-input">
+                <div class="body">
                         <!--  REGISTRASIKAN DIRI ANDA   -->
                         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
                         <style>
@@ -94,7 +94,7 @@
                         </style>
                         <body>
     
-                        <form id="regForm" class="animated bounce" action="{{ url('/register/buat-profil/store/', $user) }}" method="POST">
+                        <form id="regForm" class="animated bounce" action="{{ url('/register/buat-profil/store', $user) }}" method="POST">
                         {{-- Berulang-ulang gunakan class="animated infinite bounce" --}}
                         <!-- One "tab" for each step in the form: -->
                         {!! csrf_field() !!}
@@ -103,34 +103,53 @@
                             Sebelum lanjut menuliskan artikel, izinkan kami dan rekan-rekan pembaca artikel kamu mengenalmu lebih dalam.<br /><br />
                             Dengan menekan tombol <b>Selanjutnya</b>, kamu sudah mulai mengisi informasi tentang kamu.<br/><br />
                             Dan memulai menulis hal hebatmu.
+
+                            {{-- @if ($errors->any())
+                                    {{ implode('', $errors->all('<div>:message</div>')) }}
+                            @endif --}}
+                            {{-- DIATAS DIGUNAKAN UNTUK OPEN BUG JIKA ADA YANG SALAH DI FORM NYA --}}
+
                         <br/><br /><br />
                         </div>
-                        
+                        {{-- Form Pekerjaan --}}
                         <div class="tab animated fadeInUp">Kalau Boleh tahu, apa pekerjaan kamu?
-                            <p><input placeholder="Pekerjaan saya adalah..." oninput="this.className = ''" name="jobs"></p>
+                            <p><input placeholder="Pekerjaan saya adalah..." name="jobs"></p>
                             Dimana itu?
                             <p><input placeholder="Saya Bekerja atau Pelajar di..." name="jobs_where"></input></p>
                         </div>
-                        <div class="tab animated fadeInUp">Kamu tinggal dimana?
+                        {{-- Form Alamat --}}
+                        <div class="tab demo-masked-input animated fadeInUp">Kamu tinggal dimana?
                             <p><input placeholder="Nama Jalan, RT / RW, Dusun / Komplek / Blok" name="address_line1"></p>
                             <p><input placeholder="Desa / Kelurahan, Kecamatan" name="address_line2"></p>
                             <p><input placeholder="Kota / Kabupaten" name="address_city"></p>
                             <p><input placeholder="Provinsi" name="address_province"></p>
                             <p><input placeholder="Kode Pos" type="number" name="address_zipcode"></p>
-                            
+                            <br >
+                            Nomor HP nya sekalian dong
+                            <div class="form-line">
+                                <input type="text" name="contact_phone_number" class="form-control mobile-phone-number" placeholder="Ex: 0858-0660-2320">
+                            </div>
                         </div>
-                        <div class="tab">
+
+                        {{-- Form Tanggal Lahir --}}
+                        <div class="tab demo-masked-input animated fadeInUp">
                             <p>Tulis tanggal lahir kamu disini
                                 <div class="input-group">
                                     <span class="input-group-addon">
                                         <i class="material-icons">date_range</i>
                                     </span>
                                     <div class="form-line">
-                                        <input type="text" name="birthday" class="form-control date" placeholder="Ex: 30/07/2016">
+                                        <input type="text" name="birthday" class="form-control date" placeholder="Contoh: 1999-03-22">
                                     </div>
                                 </div>
+                                Kamu Cowok atau Cewek?
+                                <select class="form-control show-tick" name="sex">
+                                    <option value="cowok">Cowok</option>
+                                    <option value="cewek">Cewek</option>
+                                </select>
                             </p>
                         </div>
+                       
                         <div style="overflow:auto;">
                             <div style="float:right;">
                             <button type="button" id="prevBtn" onclick="nextPrev(-1)">Sebelumnya</button>

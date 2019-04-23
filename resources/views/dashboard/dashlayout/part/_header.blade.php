@@ -32,10 +32,12 @@ www.jangkrik.online ------ www.jangkrik.online
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
 
-@if ($judul === 'Buat Profil Kamu')
+@if ($cok_plugins === 'formulir')
 {{-- Penambahan Khusus Disini Cok --}}
 {{-- Tentang Buat Profil Baru --}}
     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <!-- Bootstrap Core Css -->
     <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
