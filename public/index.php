@@ -58,3 +58,11 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+
+/**
+ * 
+ * ALL SOURCE CODE IS CREATED BY
+ *              SURYAHADI EKO HANGGORO
+ * FROM         JANGKRIK.ONLINE
+ * 
+ */
