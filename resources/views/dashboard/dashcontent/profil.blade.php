@@ -67,7 +67,7 @@
                                 {{-- Foto Profil --}}
                                 <div role="tabpanel" class="tab-pane fade in" id="foto_profil">
                                     <form action="{{ url('/dashboard/profil/update', $user) }}" id="frmFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
-                                        {!! csrf_field() !!}
+                                        @csrf
                                         <div class="dz-message">
                                             <div class="drag-icon-cph">
                                                 <i class="material-icons">photo</i>

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\Auth;
+
 
 class ProfileController extends Controller
 {
@@ -92,6 +94,32 @@ class ProfileController extends Controller
 
             return redirect()->to('/dashboard');
     }
+
+
+    public function redirectCok()
+    {
+        // INI DIGUNAKAN UNTUK REDIRECT DARI /dashboard/profil
+        // MENJADI /dashboard/profil/(id user pengguna)
+        // // User role
+        // $role = Auth::user()->role->name; 
+        
+        // Check user role
+        // switch ($role) {
+        //     case 'Manager':
+        //             return '/dashboard';
+        //         break;
+        //     case 'Employee':
+        //             return '/projects';
+        //         break; 
+        //     default:
+        //             return '/login'; 
+        //         break;
+        
+        $profilku = Auth::user()->id;
+
+        return redirect('/dashboard/profil/'.$profilku);
+    }
+
 
     /**
      * Display the specified resource.
