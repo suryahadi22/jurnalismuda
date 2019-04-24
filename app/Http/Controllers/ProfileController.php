@@ -92,7 +92,7 @@ class ProfileController extends Controller
             $tambahkan->social_youtube = $request['social_youtube'];
             $tambahkan->save();
 
-            return redirect()->to('/dashboard');
+            return redirect()->to('/dashboard/profil');
     }
 
 

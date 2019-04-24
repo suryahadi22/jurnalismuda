@@ -14,13 +14,21 @@ class KategoriController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth'); // Autentifikasi Pengguna CUk
+    }
+
+
     public function index()
     {
+        $kategori = Category::orderBy('id', 'DESC')->paginate(10);
         return view('dashboard.dashcontent.kategori')
         ->with([
             'judul' => 'Kategori',
             'cok_plugins' => 'standart',
-
+            'kategori_show' => $kategori
         ]);
     }
 

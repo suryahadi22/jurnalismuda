@@ -22,18 +22,22 @@
                                             <th><strong>#id</strong></th>
                                             <th><strong>Nama Kategori</strong></th>
                                             <th><strong>Deskripsi</strong></th>
+                                            <th><strong>Dibuat Oleh</strong></th>
                                             <th class="text-center" colspan="3"><strong>Aksi</strong></th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($kategori_show as $data)
                                         <tr>
-                                            <td>1</td>
-                                            <td>Kategori Unik</td>
-                                            <td>Ini adalah sebuah kategori yang unik kawan</td>
+                                            <td>{{ $data->id }}</td>
+                                            <td>{{ $data->category_name }}</td>
+                                            <td>{{ $data->category_description }}</td>
+                                            <td>{{ $data->created_by }}</td>
                                             <td><a href="#" class="btn btn-primary"><i class="material-icons">details</i></a></td>
                                             <td><a href="#" class="btn btn-primary"><i class="material-icons">mode_edit</i></a></td>
                                             <td><a href="#" class="btn btn-primary"><i class="material-icons">delete_forever</i></a></td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                                 {{-- {{ $artikel_show->links() }} --}}

@@ -127,7 +127,7 @@
                             <br >
                             Nomor HP nya sekalian dong
                             <div class="form-line">
-                                <input type="text" name="contact_phone_number" class="form-control mobile-phone-number" placeholder="Ex: 0858-0660-2320">
+                                <input type="text" name="contact_phone_number" class="form-control mobile-nomor-telepon" placeholder="Ex: 0858-0660-2320">
                             </div>
                         </div>
 
@@ -139,7 +139,7 @@
                                         <i class="material-icons">date_range</i>
                                     </span>
                                     <div class="form-line">
-                                        <input type="text" name="birthday" class="form-control date" placeholder="Contoh: 1999-03-22">
+                                        <input type="text" name="birthday" class="form-control birth-date" placeholder="Contoh: 1999-03-22">
                                     </div>
                                 </div>
                                 Kamu Cowok atau Cewek?
