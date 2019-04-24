@@ -93,7 +93,11 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
+                    @if (Auth::user()->avatar === null)
                     <img src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/images/user.png" width="48" height="48" alt="User" />
+                    @else
+                    <img src="{{ asset('/data/user/avatar/'. auth::user()->avatar) }}" alt="{{ auth::user()->full_name }}" width="48" height="48" />
+                    @endif
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

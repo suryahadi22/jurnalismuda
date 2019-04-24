@@ -209,6 +209,25 @@ class ProfileController extends Controller
         return redirect()->to('/dashboard/profil');
     }
 
+    public function profilephotoUpdate(Request $request, $id)
+    {
+        $this->validate($request, [
+            'avatar' => 'nullable',
+        ]);
+
+        $gantikan = User::where('id', $id)->first();
+
+        $file       = $request->file('avatar');
+        $cekUsername = Auth::user()->id; // Menambahkan fitur Username di Gambar
+        $fileName   = $file->getClientOriginalName();
+        $request->file('avatar')->move("data/user/avatar", $fileName);
+
+        $gantikan->avatar = $fileName;
+        $gantikan->save();
+
+        return redirect()->to('/dashboard/profil');
+    }
+
     /**
      * Remove the specified resource from storage.
      *

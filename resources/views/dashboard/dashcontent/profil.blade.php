@@ -9,8 +9,12 @@
                     <div class="profile-header">&nbsp;</div>
                     <div class="profile-body">
                         <div class="image-area">
-                            <img src="http://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/images/user.png" alt="{{ auth::user()->full_name }}" />
-                        </div>
+                                @if (Auth::user()->avatar === null)
+                                <img src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/images/user.png" width="128" height="128" alt="User" />
+                                @else
+                                <img src="{{ asset('/data/user/avatar/'. auth::user()->avatar) }}" alt="{{ auth::user()->full_name }}" width="128" height="128" />
+                                @endif
+                            </div>
                         <div class="content-area">
                             <h3>{{ auth::user()->full_name }}</h3>
                             <p>{{ auth::user()->username }}</p>
@@ -31,6 +35,17 @@
             <div class="col-xs-12 col-sm-9">
                 <div class="card">
                     <div class="body">
+
+                            {{-- DEBUG START --}}
+                            @if(count($errors) > 0)
+                            <div class="alert alert-danger">
+                                @foreach ($errors->all() as $error)
+                                {{ $error }} <br/>
+                                @endforeach
+                            </div>
+                            @endif
+
+                            {{-- DEBUG END --}}
                         <div>
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" class="active"><a href="#informasi_dasar" aria-controls="home" role="tab" data-toggle="tab">Informasi Dasar</a></li>
@@ -66,8 +81,8 @@
                                 </div>
                                 {{-- Foto Profil --}}
                                 <div role="tabpanel" class="tab-pane fade in" id="foto_profil">
-                                    <form action="{{ url('/dashboard/profil/update', $user) }}" id="frmFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
-                                        @csrf
+                                    <form action="{{ url('/dashboard/profil/ppupdate', $user) }}" id="ppFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
+                                        {{ csrf_field() }}
                                         <div class="dz-message">
                                             <div class="drag-icon-cph">
                                                 <i class="material-icons">photo</i>
