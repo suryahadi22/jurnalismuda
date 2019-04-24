@@ -50,6 +50,7 @@
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" class="active"><a href="#informasi_dasar" aria-controls="home" role="tab" data-toggle="tab">Informasi Dasar</a></li>
                                 <li role="presentation"><a href="#foto_profil" aria-controls="foto_profil" role="tab" data-toggle="tab">Foto Profil</a></li>
+                                <li role="presentation"><a href="#social_media" aria-controls="social_media" role="tab" data-toggle="tab">Media Sosial</a></li>
                                 <li role="presentation"><a href="#ganti_password" aria-controls="ganti_password" role="tab" data-toggle="tab">Ganti Password</a></li>
                             </ul>
                             <div class="tab-content">
@@ -69,6 +70,22 @@
                                             <div class="col-sm-10">
                                                 <div class="form-line">
                                                     <input type="email" class="form-control" id="Email" name="Email" placeholder="Email" value="{{ Auth::user()->email }}" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="jobs" class="col-sm-2 control-label">Pekerjaan</label>
+                                            <div class="col-sm-10">
+                                                <div class="form-line">
+                                                    <input type="text" class="form-control" id="jobs" name="jobs" placeholder="Pekerjaan" value="{{ Auth::user()->jobs }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="jobs_where" class="col-sm-2 control-label">Tempat Kerja / Belajar</label>
+                                            <div class="col-sm-10">
+                                                <div class="form-line">
+                                                    <input type="text" class="form-control" id="jobs_where" name="jobs_where" placeholder="Tempat Kerja / Belajar" value="{{ Auth::user()->jobs_where }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -96,7 +113,11 @@
                                         </div>
                                     </form>
                                 </div>
-
+                                <div role="tabpanel" class="tab-pane fade in" id="social_media">
+                                    <form action="" class="form-horizontal">
+                                        Test
+                                    </form>
+                                </div>
 
                                 <div role="tabpanel" class="tab-pane fade in" id="ganti_password">
                                     <form class="form-horizontal">
