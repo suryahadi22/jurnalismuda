@@ -40,7 +40,8 @@ class ArticleController extends Controller
     {
         return view('dashboard.dashcontent.artikel.create')
         ->with([
-            'judul' => 'Buat Artikel Baru'
+            'judul' => 'Buat Artikel Baru',
+            'cuk_plugins' => 'standart'
         ]);
     }
 

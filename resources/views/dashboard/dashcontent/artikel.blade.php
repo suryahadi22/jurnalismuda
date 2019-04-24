@@ -13,7 +13,7 @@
                                 Tulis terus, dan tunjukkan pada Dunia bahwa kamu JurnalisMuda yang berkualitas.</small>
                             </h2>
                             <div class="header-dropdown m-r-5">
-                            <a href="{{ route('buat_artikel') }}" class="btn btn-default waves-effect"><i class="material-icons">add_box</i> <span>Tambah Artikel</span></a>
+                            <a href="{{ route('buat_artikel_dashboard') }}" class="btn btn-default waves-effect"><i class="material-icons">add_box</i> <span>Tambah Artikel</span></a>
                             </div>
                         </div>
                         <div class="body table-responsive">

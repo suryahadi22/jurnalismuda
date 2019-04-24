@@ -16,7 +16,7 @@
         class="active"
         @endif
         >
-            <a href="{{ route('artikel') }}">
+            <a href="{{ route('artikel_dashboard') }}">
                 <i class="material-icons">mode_edit</i>
                 <span>Artikel</span>
             </a>
@@ -40,8 +40,12 @@
                 <span>Tag / Topik</span>
             </a>
         </li>
-        <li>
-            <a href="#">
+        <li
+        @if ($judul === 'Kategori')
+        class="active"
+        @endif
+        >
+            <a href="{{ route('kategori_dashboard') }}">
                 <i class="material-icons">domain</i>
                 <span>Kategori</span>
             </a>
@@ -92,7 +96,7 @@
             </a>
         </li>
         <li>
-            <a class="col-pink" href="pages/changelogs.html">
+            <a class="col-pink" href="#">
                 <i class="material-icons">update</i>
                 <span class="col-pink">Changelogs</span>
             </a>

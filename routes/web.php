@@ -34,7 +34,8 @@ Route::get('/register/buat-profil/{id}', 'ProfileController@create')->name('buat
 
 Route::post('/register/buat-profil/store/{id}', ['as' => 'update_process_profile', 'uses' => 'ProfileController@store']);
 
-Route::get('/dashboard/artikel', 'ArticleController@index')->name('artikel');
+Route::get('/dashboard/artikel', 'ArticleController@index')->name('artikel_dashboard');
 
-Route::get('/dashboard/artikel/buat', 'ArticleController@create')->name('buat_artikel');
+Route::get('/dashboard/artikel/buat', 'ArticleController@create')->name('buat_artikel_dashboard');
 
+Route::get('/dashboard/kategori', 'KategoriController@index')->name('kategori_dashboard');

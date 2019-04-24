@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use App\Category; // Menggunakan kategori
+
 class KategoriController extends Controller
 {
     /**
@@ -14,7 +16,12 @@ class KategoriController extends Controller
      */
     public function index()
     {
-        //
+        return view('dashboard.dashcontent.kategori')
+        ->with([
+            'judul' => 'Kategori',
+            'cok_plugins' => 'standart',
+
+        ]);
     }
 
     /**
