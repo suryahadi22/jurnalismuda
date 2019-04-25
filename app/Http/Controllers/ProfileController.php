@@ -228,7 +228,7 @@ class ProfileController extends Controller
         $gantikan->jobs_where = $request['jobs_where'];
         $gantikan->update();
 
-        return redirect()->to('/dashboard/profil');
+        return redirect()->back()->with('success', 'Perubahan Informasi Kamu, SUKSES!');
     }
 
     public function profilephotoUpdate(Request $request, $id)

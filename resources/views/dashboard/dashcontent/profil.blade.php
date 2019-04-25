@@ -58,6 +58,11 @@
                                 <div role="tabpanel" class="tab-pane fade in active" id="informasi_dasar">
                                     <form class="form-horizontal" method="POST" action="{{ url('/dashboard/profil/updateinfo', $user) }}">
                                         @csrf
+                                        @if ($message = Session::get('success'))
+                                            <div class="alert alert-success">
+                                                {{ $message }}
+                                            </div>
+                                        @endif
                                         <div class="form-group">
                                             <label for="full_name" class="control-label">Nama Lengkap</label>
                                             {{-- <div class="col-sm-10"> --}}
