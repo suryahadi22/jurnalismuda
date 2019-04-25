@@ -112,7 +112,13 @@
                         <br/><br /><br />
                         </div>
                         {{-- Form Pekerjaan --}}
-                        <div class="tab animated fadeInUp">Kalau Boleh tahu, apa pekerjaan kamu?
+                        <div class="tab animated fadeInUp">Kamu pelajar, mahasiswa, atau sudah bekerja?
+                            <select class="form-control show-tick" name="jobs_status">
+                                <option value="pelajar">Pelajar</option>
+                                <option value="mahasiswa">Mahasiswa</option>
+                                <option value="bekerja">Bekerja</option>
+                            </select>
+                            Kalau Boleh tahu, sebagai apa / jurusan apa?
                             <p><input placeholder="Pekerjaan saya adalah..." name="jobs"></p>
                             Dimana itu?
                             <p><input placeholder="Saya Bekerja atau Pelajar di..." name="jobs_where"></input></p>

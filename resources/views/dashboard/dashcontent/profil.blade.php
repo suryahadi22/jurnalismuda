@@ -56,38 +56,65 @@
                             <div class="tab-content">
                                 {{-- Informasi Dasar --}}
                                 <div role="tabpanel" class="tab-pane fade in active" id="informasi_dasar">
-                                    <form class="form-horizontal">
+                                    <form class="form-horizontal" method="POST" action="{{ url('/dashboard/profil/updateinfo', $user) }}">
+                                        @csrf
                                         <div class="form-group">
-                                            <label for="full_name" class="col-sm-2 control-label">Nama Lengkap</label>
-                                            <div class="col-sm-10">
+                                            <label for="full_name" class="control-label">Nama Lengkap</label>
+                                            {{-- <div class="col-sm-10"> --}}
                                                 <div class="form-line">
                                                 <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Nama Lengkap" value="{{ Auth::user()->full_name }}" required>
                                                 </div>
-                                            </div>
+                                            {{-- </div> --}}
+                                            <br><br>
                                         </div>
                                         <div class="form-group">
-                                            <label for="Email" class="col-sm-2 control-label">Email</label>
-                                            <div class="col-sm-10">
+                                            <label for="jobs_status" class="control-panel">Status Pekerjaan</label>
+                                            {{-- <div class="col-sm-10"> --}}
                                                 <div class="form-line">
-                                                    <input type="email" class="form-control" id="Email" name="Email" placeholder="Email" value="{{ Auth::user()->email }}" required>
-                                                </div>
+                                                        <select class="form-control show-tick" name="jobs_status">
+                                                            <option value="pelajar"
+                                                            @if (Auth::user()->jobs_status === 'pelajar')
+                                                            selected
+                                                            @endif
+                                                            >
+                                                            Pelajar
+                                                            </option>
+                                                            <option value="mahasiswa"
+                                                            @if (Auth::user()->jobs_status === 'mahasiswa')
+                                                            selected
+                                                            @endif
+                                                            >
+                                                            Mahasiswa
+                                                        </option>
+                                                            <option value="bekerja"
+                                                            @if (Auth::user()->jobs_status === 'bekerja')
+                                                            selected
+                                                            @endif
+                                                            >
+                                                            Bekerja
+                                                        </option>
+                                                        </select>
+                                                {{-- </div> --}}
                                             </div>
+                                            <br><br>
                                         </div>
                                         <div class="form-group">
-                                            <label for="jobs" class="col-sm-2 control-label">Pekerjaan</label>
-                                            <div class="col-sm-10">
+                                            <label for="jobs" class="control-label">Sebagai / Posisi / Jurusan</label>
+                                            {{-- <div class="col-sm-10"> --}}
                                                 <div class="form-line">
-                                                    <input type="text" class="form-control" id="jobs" name="jobs" placeholder="Pekerjaan" value="{{ Auth::user()->jobs }}">
+                                                    <input type="text" class="form-control" id="jobs" name="jobs" placeholder="Posisi / Jurusan" value="{{ Auth::user()->jobs }}">
                                                 </div>
-                                            </div>
+                                            {{-- </div> --}}
+                                            <br><br>
                                         </div>
                                         <div class="form-group">
-                                            <label for="jobs_where" class="col-sm-2 control-label">Tempat Kerja / Belajar</label>
-                                            <div class="col-sm-10">
+                                            <label for="jobs_where" class="control-label">Tempat Kerja / Belajar</label>
+                                            {{-- <div class="col-sm-10"> --}}
                                                 <div class="form-line">
                                                     <input type="text" class="form-control" id="jobs_where" name="jobs_where" placeholder="Tempat Kerja / Belajar" value="{{ Auth::user()->jobs_where }}">
                                                 </div>
-                                            </div>
+                                            {{-- </div> --}}
+                                            <br><br>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-sm-offset-2 col-sm-10">
@@ -115,7 +142,9 @@
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade in" id="social_media">
                                     <form action="" class="form-horizontal">
-                                        Test
+                                        <div class="form-group">
+
+                                        </div>
                                     </form>
                                 </div>
 

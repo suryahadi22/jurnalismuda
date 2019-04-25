@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('avatar')->nullable(); // DATA FOTO PROFIL
+            $table->enum('jobs_status', ['pelajar', 'mahasiswa', 'bekerja']);
             $table->string('jobs')->nullable(); // Pekerjaan
             $table->string('jobs_where')->nullable(); // Kerja dimana?
             $table->string('social_facebook')->nullable();

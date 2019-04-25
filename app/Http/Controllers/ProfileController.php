@@ -56,6 +56,7 @@ class ProfileController extends Controller
          // Memasukkan data dari inputan user
          $this->validate($request, [
             'avatar' => 'nullable',
+            'jobs_status' => 'required',
             'jobs' => 'required',
             'jobs_where' => 'required',
             'contact_phone_number' => 'required',
@@ -75,6 +76,7 @@ class ProfileController extends Controller
             ]);
 
             $tambahkan = User::where('id', $id)->first();
+            $tambahkan->jobs_status = $request['jobs_status'];
             $tambahkan->jobs = $request['jobs'];
             $tambahkan->jobs_where = $request['jobs_where'];
             $tambahkan->contact_phone_number = $request['contact_phone_number'];
@@ -199,12 +201,32 @@ class ProfileController extends Controller
         $gantikan->social_linkedin = $request['social_linkedin'];
         $gantikan->social_youtube = $request['social_youtube'];
 
-        $file       = $request->file('avatar');
-        $fileName   = $file->getClientOriginalName();
-        $request->file('avatar')->move("/data/user/avatar", $fileName);
+        // $file       = $request->file('avatar');
+        // $fileName   = $file->getClientOriginalName();
+        // $request->file('avatar')->move("/data/user/avatar", $fileName);
 
-        $gantikan->avatar = $fileName;
+        // $gantikan->avatar = $fileName;
         $gantikan->save();
+
+        return redirect()->to('/dashboard/profil');
+    }
+
+    public function informationUpdate(Request $request, $id)
+    {
+        // Memasukkan data dari inputan user
+       $this->validate($request, [
+        'full_name' => 'required',
+        'jobs_status' => 'required',
+        'jobs' => 'required',
+        'jobs_where' => 'required'
+        ]);
+
+        $gantikan = User::where('id', $id)->first();
+        $gantikan->full_name = $request['full_name'];
+        $gantikan->jobs_status = $request['jobs_status'];
+        $gantikan->jobs = $request['jobs'];
+        $gantikan->jobs_where = $request['jobs_where'];
+        $gantikan->update();
 
         return redirect()->to('/dashboard/profil');
     }

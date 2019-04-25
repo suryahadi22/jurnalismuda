@@ -25,6 +25,7 @@ class User extends Authenticatable
         'email',
         'password',
         'avatar',
+        'jobs_status',
         'jobs',
         'jobs_where',
         'contact_phone_number',
@@ -33,7 +34,7 @@ class User extends Authenticatable
         'address_city',
         'address_province',
         'address_zipcode',
-        // 'sex',
+        'sex',
         'birthday',
         
         // SOCIAL MEDIA INSERT HERE

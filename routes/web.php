@@ -28,7 +28,9 @@ Route::get('/dashboard/profil', 'ProfileController@redirectCok');
 
 Route::get('/dashboard/profil/{id}', 'ProfileController@edit')->name('profil');
 
-Route::post('/dashboard/profil/ppupdate/{id}', 'ProfileController@profilephotoUpdate');
+Route::post('/dashboard/profil/updateinfo/{id}', 'ProfileController@informationUpdate');   //INFORMATION UPDATE
+
+Route::post('/dashboard/profil/ppupdate/{id}', 'ProfileController@profilephotoUpdate');     // PHOTO PROFILE UPDATE
 
 Route::get('/register/buat-profil/{id}', 'ProfileController@create')->name('buat_profil');
 
