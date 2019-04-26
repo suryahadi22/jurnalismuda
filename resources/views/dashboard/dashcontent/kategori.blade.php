@@ -9,7 +9,7 @@
                                 <h2>
                                     DAFTAR KATEGORI
                                     <small>Berikut adalah daftar Kategori yang tersedia<br />
-                                    Tulis terus, dan tunjukkan pada Dunia bahwa kamu JurnalisMuda yang berkualitas.</small>
+                                    Tulis terus, dan tunjukkan pada Dunia bahwa kamu MediaBebas yang berkualitas.</small>
                                 </h2>
                                 <div class="header-dropdown m-r-5">
                                 <a href="#" class="btn btn-default waves-effect"><i class="material-icons">add_box</i> <span>Tambah Kategori</span></a>

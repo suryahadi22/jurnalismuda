@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Daftar | JurnalisMuda.com Dashboard</title>
+    <title>Daftar | MediaBebas.com Dashboard</title>
     <!-- Favicon-->
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 
@@ -32,7 +32,7 @@
 <body class="signup-page">
     <div class="signup-box">
         <div class="logo">
-            <a href="{{ route('home') }}"><b>JurnalisMuda</b>.com</a>
+            <a href="{{ route('home') }}"><b>MediaBebas</b>.com</a>
             <small>Teliti, Cerdas, Menghibur, Menyenangkan</small>
         </div>
         <div class="card">

@@ -10,7 +10,7 @@
                             <h2>
                                 DAFTAR ARTIKEL
                                 <small>Berikut adalah tulisan hebatmu.<br />
-                                Tulis terus, dan tunjukkan pada Dunia bahwa kamu JurnalisMuda yang berkualitas.</small>
+                                Tulis terus, dan tunjukkan pada Dunia bahwa kamu MediaBebas yang berkualitas.</small>
                             </h2>
                             <div class="header-dropdown m-r-5">
                             <a href="{{ route('buat_artikel_dashboard') }}" class="btn btn-default waves-effect"><i class="material-icons">add_box</i> <span>Tambah Artikel</span></a>

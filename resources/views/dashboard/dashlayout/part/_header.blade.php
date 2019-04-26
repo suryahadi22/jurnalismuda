@@ -1,7 +1,7 @@
 <!-- 
-HELLO, THIS IS A DASHBOARD OF JURNALISMUDA.COM
+HELLO, THIS IS A DASHBOARD OF MediaBebas.COM
 
-Dashboard pengelolaan situs jurnalismuda --- BY SURYAHADI
+Dashboard pengelolaan situs MediaBebas --- BY SURYAHADI
 
 
 KONSEP PENTEMAAN                ADMIN BSB MATERIAL DESIGN
@@ -23,7 +23,7 @@ www.jangkrik.online ------ www.jangkrik.online
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <meta name="author" content="Suryahadi E. H">
-<title>{{ $judul }} | JurnalisMuda.Com Dashboard</title>
+<title>{{ $judul }} | MediaBebas.Com Dashboard</title>
 <!-- Favicon-->
 <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 

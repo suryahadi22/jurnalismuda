@@ -99,7 +99,7 @@
                         <!-- One "tab" for each step in the form: -->
                         {!! csrf_field() !!}
                         <div class="tab align-center">
-                            <div class="alert alert-success">Selamat! Kamu sudah menjadi JurnalisMuda</div>
+                            <div class="alert alert-success">Selamat! Kamu sudah menjadi MediaBebas</div>
                             Sebelum lanjut menuliskan artikel, izinkan kami dan rekan-rekan pembaca artikel kamu mengenalmu lebih dalam.<br /><br />
                             Dengan menekan tombol <b>Selanjutnya</b>, kamu sudah mulai mengisi informasi tentang kamu.<br/><br />
                             Dan memulai menulis hal hebatmu.

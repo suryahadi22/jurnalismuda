@@ -9,7 +9,7 @@
                         }
                 </style>
                 <div class="alert alert-danger animated shake asu">
-                    <strong>Maaf!</strong> Akun anda saat ini sedang ditangguhkan. Karena melanggar ketentuan komunitas JurnalisMuda
+                    <strong>Maaf!</strong> Akun anda saat ini sedang ditangguhkan. Karena melanggar ketentuan komunitas MediaBebas
                 </div>
                 <p class="align-center">Mengapa Terjadi?
                     <br/>

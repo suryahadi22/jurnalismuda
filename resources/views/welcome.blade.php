@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    JurnalisMuda.com<br/>
+                    MediaBebas.com<br/>
                     By Suryahadi
                 </div>
 
