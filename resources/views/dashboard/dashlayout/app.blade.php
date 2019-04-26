@@ -94,7 +94,7 @@
             <div class="user-info">
                 <div class="image">
                     @if (Auth::user()->avatar === null)
-                    <img src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/images/user.png" width="48" height="48" alt="User" />
+                    <img src="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/images/user.png" width="48" height="48" alt="User" />
                     @else
                     <img src="{{ asset('/data/user/avatar/'. auth::user()->avatar) }}" alt="{{ auth::user()->full_name }}" width="48" height="48" />
                     @endif

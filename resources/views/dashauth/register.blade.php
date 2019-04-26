@@ -17,16 +17,16 @@
 
 
     <!-- Bootstrap Core Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/css/style.css" rel="stylesheet">
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/css/style.css" rel="stylesheet">
 </head>
 
 <body class="signup-page">
@@ -226,20 +226,20 @@
     </div>
 
     <!-- Jquery Core Js -->
-    <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/jquery/jquery.min.js"></script>
+    <script src="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core Js -->
-    <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/bootstrap/js/bootstrap.js"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/node-waves/waves.js"></script>
+    <script src="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/node-waves/waves.js"></script>
 
     <!-- Validation Plugin Js -->
-    <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/jquery-validation/jquery.validate.js"></script>
+    <script src="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/jquery-validation/jquery.validate.js"></script>
 
     <!-- Custom Js -->
-    <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/js/admin.js"></script>
-    <script src="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/js/pages/examples/sign-up.js"></script>
+    <script src="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/js/admin.js"></script>
+    <script src="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/js/pages/examples/sign-up.js"></script>
 </body>
 
 </html>

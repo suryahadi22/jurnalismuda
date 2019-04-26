@@ -39,57 +39,59 @@ www.jangkrik.online ------ www.jangkrik.online
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <!-- Bootstrap Core Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Colorpicker Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
 
     <!-- Dropzone Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/dropzone/dropzone.css" rel="stylesheet">
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/dropzone/dropzone.css" rel="stylesheet">
 
     <!-- Multi Select Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/multi-select/css/multi-select.css" rel="stylesheet">
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/multi-select/css/multi-select.css" rel="stylesheet">
 
     <!-- Bootstrap Spinner Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
 
     <!-- Bootstrap Tagsinput Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
 
     <!-- Bootstrap Select Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 
     <!-- noUISlider Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/nouislider/nouislider.min.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/nouislider/nouislider.min.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/css/style.css" rel="stylesheet">
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/css/themes/all-themes.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/css/themes/all-themes.css" rel="stylesheet" />
+
+
 @else
         <!-- Bootstrap Core Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Morris Chart Css-->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/plugins/morrisjs/morris.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/morrisjs/morris.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/css/style.css" rel="stylesheet">
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/css/style.css" rel="stylesheet">
 
     <!-- You can choose a theme from css/themes instead of get all themes -->
-    <link href="https://jurnalismuda-com.assets-file-storage.jangkrik.online/assets_dashboard/css/themes/all-themes.css" rel="stylesheet" />
+    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/css/themes/all-themes.css" rel="stylesheet" />
 
 @endif
