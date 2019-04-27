@@ -21,12 +21,14 @@
                 <span>Artikel</span>
             </a>
         </li>
+        @if (Auth::user()->level_access === 'admin')
         <li>
             <a href="#">
                 <i class="material-icons">pages</i>
                 <span>Halaman</span>
             </a>
         </li>
+        @endif
         <li>
             <a href="#">
                 <i class="material-icons">photo</i>
