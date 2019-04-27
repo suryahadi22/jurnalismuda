@@ -34,6 +34,8 @@ Route::post('/dashboard/profil/ppupdate/{id}', 'ProfileController@profilephotoUp
 
 Route::post('/dashboard/profil/socialupdate/{id}', 'ProfileController@socialmediaUpdate');  // INFORMATION OF SOCIAL NETWORKING USER
 
+Route::put('/dashboard/profil/passwordupdate', 'ProfileController@passwordUpdate')->name('password.update');
+
 Route::get('/register/buat-profil/{id}', 'ProfileController@create')->name('buat_profil');
 
 Route::post('/register/buat-profil/store/{id}', ['as' => 'update_process_profile', 'uses' => 'ProfileController@store']);

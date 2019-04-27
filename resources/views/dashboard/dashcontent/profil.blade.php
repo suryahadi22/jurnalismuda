@@ -202,28 +202,30 @@
                                 </div>
 
                                 <div role="tabpanel" class="tab-pane fade in" id="ganti_password">
-                                    <form class="form-horizontal">
+                                    <form class="form-horizontal" method="POST" action="{{ route('password.update') }}">
+                                        {{ csrf_field() }}
+                                        {{ method_field('put') }}
                                         <div class="form-group">
-                                            <label for="OldPassword" class="col-sm-3 control-label">Old Password</label>
+                                            <label for="current_password" class="col-sm-3 control-label">Old Password</label>
                                             <div class="col-sm-9">
                                                 <div class="form-line">
-                                                    <input type="password" class="form-control" id="OldPassword" name="OldPassword" placeholder="Old Password" required>
+                                                    <input type="password" class="form-control" id="OldPassword" name="current_password" placeholder="Password Lama" required>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="NewPassword" class="col-sm-3 control-label">New Password</label>
+                                            <label for="password" class="col-sm-3 control-label">New Password</label>
                                             <div class="col-sm-9">
                                                 <div class="form-line">
-                                                    <input type="password" class="form-control" id="NewPassword" name="NewPassword" placeholder="New Password" required>
+                                                    <input type="password" class="form-control" id="NewPassword" name="password" placeholder="Password Baru" required>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="NewPasswordConfirm" class="col-sm-3 control-label">New Password (Confirm)</label>
+                                            <label for="password_confirmation" class="col-sm-3 control-label">New Password (Confirm)</label>
                                             <div class="col-sm-9">
                                                 <div class="form-line">
-                                                    <input type="password" class="form-control" id="NewPasswordConfirm" name="NewPasswordConfirm" placeholder="New Password (Confirm)" required>
+                                                    <input type="password" class="form-control" id="NewPasswordConfirm" name="password_confirmation" placeholder="New Password (Confirm)" required>
                                                 </div>
                                             </div>
                                         </div>

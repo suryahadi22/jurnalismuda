@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Hash;       // Enkripsi Password
+use Validator;
 
 
 class ProfileController extends Controller
@@ -267,6 +269,36 @@ class ProfileController extends Controller
         $gantikan->update();
 
         return redirect()->to('/dashboard/profil');
+    }
+
+    public function passwordUpdate(Request $request)
+    {
+        // Formulir Validasi
+        Validator::extend('password', function ($attribute, $value, $parameters, $validator)
+        {
+            return Hash::check($value, \Auth::user()->password);
+        });
+
+        $message = ['password' => 'Password saat ini salah'];
+
+        $validator = Validator::make($request->all(), [
+            'current_password' => 'required|password',
+            'password' => 'required|min:8|confirmed', // New Password
+            'password_confirmation' => 'required'
+        ], $message);
+
+        // Jika validasi gagal
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator->errors());
+        }
+
+        // Update password
+        $user = User::find(Auth::id());
+        $user->password = bcrypt(request('password'));
+        $user->save();
+
+        return redirect()->back()->with('success', 'Perubahan Password Kamu, SUKSES!');
+
     }
 
     /**
