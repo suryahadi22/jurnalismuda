@@ -43,7 +43,7 @@
 <script src="{{ asset('scripts/custom_js/pages/forms/advanced-form-elements.js') }}"></script>
 
 <!-- Demo Js -->
-<script src="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/js/demo.js"></script>
+<script src="{{ asset('scripts/custom_js/demo.js') }}"></script>
 
 
 @elseif($cok_plugins === 'grafik')
@@ -77,6 +77,6 @@
 <script src="{{ asset('scripts/custom_js/admin.js') }}"></script>
 
 <!-- Demo Js -->
-<script src="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/js/demo.js"></script>
+<script src="{{ asset('scripts/custom_js/demo.js') }}"></script>
 
 @endif

@@ -69,7 +69,7 @@ www.jangkrik.online ------ www.jangkrik.online
     <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/nouislider/nouislider.min.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/css/style.css" rel="stylesheet">
+    <link href="{{ asset('scripts/custom_css/style.css') }}" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/css/themes/all-themes.css" rel="stylesheet" />
@@ -89,7 +89,7 @@ www.jangkrik.online ------ www.jangkrik.online
     <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/morrisjs/morris.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/css/style.css" rel="stylesheet">
+    <link href="{{ asset('scripts/custom_css/style.css') }}" rel="stylesheet">
 
     <!-- You can choose a theme from css/themes instead of get all themes -->
     <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/css/themes/all-themes.css" rel="stylesheet" />

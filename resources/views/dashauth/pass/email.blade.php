@@ -26,7 +26,7 @@
     <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="https://assets-file-storage.jangkrik.online/surya-repository/assets_dashboard/css/style.css" rel="stylesheet">
+    <link href="{{ asset('scripts/custom_css/style.css') }}" rel="stylesheet">
 </head>
 
 <body class="fp-page">
