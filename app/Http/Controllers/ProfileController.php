@@ -258,6 +258,7 @@ class ProfileController extends Controller
             'social_facebook' => 'nullable',
             'social_twitter' => 'nullable',
             'social_instagram' => 'nullable',
+            'social_linkedin' => 'nullable',
             'social_youtube' => 'nullable'
         ]);
 
@@ -265,10 +266,11 @@ class ProfileController extends Controller
         $gantikan->social_facebook = $request['social_facebook'];
         $gantikan->social_twitter = $request['social_twitter'];
         $gantikan->social_instagram = $request['social_instagram'];
+        $gantikan->social_linkedin = $request['social_linkedin'];
         $gantikan->social_youtube = $request['social_youtube'];
         $gantikan->update();
 
-        return redirect()->to('/dashboard/profil');
+        return redirect()->back()->with('success', 'Perubahan Informasi Kamu, SUKSES!');
     }
 
     public function passwordUpdate(Request $request)

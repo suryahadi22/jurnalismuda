@@ -178,11 +178,21 @@
                                             <label for="social_instagram" class="col-sm3 control-label"><i class="fab fa-instagram fa-2x"></i></label>
                                             <div class="col-sm-9">
                                                 <div class="form-line">
-                                                    <input type="test" class="form-control" id="instagram" name="social_instagram" placeholder="Masukkan Username Instagram kamu" value="{{ Auth::user()->social_instagran }}">
+                                                    <input type="test" class="form-control" id="instagram" name="social_instagram" placeholder="Masukkan Username Instagram kamu" value="{{ Auth::user()->social_instagram }}">
                                                 </div>
                                                 <span><small>instagram.com/<em>username_kamu</em></small></span>
                                             </div>
                                         </div>
+                                        {{-- LinkedIn --}}
+                                        <div class="form-group">
+                                                <label for="social_linkedin" class="col-sm3 control-label"><i class="fab fa-linkedin fa-2x"></i></label>
+                                                <div class="col-sm-9">
+                                                    <div class="form-line">
+                                                        <input type="test" class="form-control" id="linkedin" name="social_linkedin" placeholder="Masukkan Username Linkedin kamu" value="{{ Auth::user()->social_linkedin }}">
+                                                    </div>
+                                                    <span><small>linkedin.com/in/<em>username_kamu</em></small></span>
+                                                </div>
+                                            </div>
                                         <div class="form-group">
                                             <div class="col-sm-offset-3 col-sm-9">
                                                 <button type="submit" class="btn btn-danger">SUBMIT</button>
