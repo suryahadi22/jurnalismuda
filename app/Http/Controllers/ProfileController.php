@@ -250,6 +250,25 @@ class ProfileController extends Controller
         return redirect()->to('/dashboard/profil');
     }
 
+    public function socialmediaUpdate(Request $request, $id)
+    {
+        $this->validate($request, [
+            'social_facebook' => 'nullable',
+            'social_twitter' => 'nullable',
+            'social_instagram' => 'nullable',
+            'social_youtube' => 'nullable'
+        ]);
+
+        $gantikan = User::where('id', $id)->first();
+        $gantikan->social_facebook = $request['social_facebook'];
+        $gantikan->social_twitter = $request['social_twitter'];
+        $gantikan->social_instagram = $request['social_instagram'];
+        $gantikan->social_youtube = $request['social_youtube'];
+        $gantikan->update();
+
+        return redirect()->to('/dashboard/profil');
+    }
+
     /**
      * Remove the specified resource from storage.
      *

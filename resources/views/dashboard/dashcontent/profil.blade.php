@@ -46,6 +46,15 @@
                             @endif
 
                             {{-- DEBUG END --}}
+
+                            {{-- INFO SUCCESS START --}}
+                            @if ($message = Session::get('success'))
+                                <div class="alert alert-success">
+                                    {{ $message }}
+                                </div>
+                            @endif
+
+                            {{-- INFO SUCCESS END --}}
                         <div>
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" class="active"><a href="#informasi_dasar" aria-controls="home" role="tab" data-toggle="tab">Informasi Dasar</a></li>
@@ -58,11 +67,6 @@
                                 <div role="tabpanel" class="tab-pane fade in active" id="informasi_dasar">
                                     <form class="form-horizontal" method="POST" action="{{ url('/dashboard/profil/updateinfo', $user) }}">
                                         @csrf
-                                        @if ($message = Session::get('success'))
-                                            <div class="alert alert-success">
-                                                {{ $message }}
-                                            </div>
-                                        @endif
                                         <div class="form-group">
                                             <label for="full_name" class="control-label">Nama Lengkap</label>
                                             {{-- <div class="col-sm-10"> --}}
@@ -146,10 +150,54 @@
                                     </form>
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade in" id="social_media">
-                                    <form action="" class="form-horizontal">
+                                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+                                    <form action="{{ url('/dashboard/profil/socialupdate', $user) }}" class="form-horizontal" method="POST">
+                                        @csrf
+                                        {{-- Facebook --}}
                                         <div class="form-group">
-
+                                            <label for="facebook" class="col-sm3 control-label"><i class="fab fa-facebook fa-2x"></i></label>
+                                            <div class="col-sm-9">
+                                                <div class="form-line">
+                                                    <input type="text" class="form-control" id="facebook" name="facebook" placeholder="Masukkan Username Facebook kamu" value="{{ Auth::user()->social_facebook }}">
+                                                </div>
+                                                <span><small>facebook.com/<em>username_kamu</em></small></span>
+                                            </div>
                                         </div>
+                                        {{-- Twitter --}}
+                                        <div class="form-group">
+                                            <label for="twitter" class="col-sm3 control-label"><i class="fab fa-twitter fa-2x"></i></label>
+                                            <div class="col-sm-9">
+                                                <div class="form-line">
+                                                    <input type="text" class="form-control" id="twitter" name="twitter" placeholder="Masukkan Username Twitter kamu" value="{{ Auth::user()->social_twitter }}">
+                                                </div>
+                                                <span><small>twitter.com/<em>username_kamu</em></small></span>
+                                            </div>
+                                        </div>
+                                        {{-- Instagram --}}
+                                        <div class="form-group">
+                                            <label for="instagram" class="col-sm3 control-label"><i class="fab fa-instagram fa-2x"></i></label>
+                                            <div class="col-sm-9">
+                                                <div class="form-line">
+                                                    <input type="test" class="form-control" id="instagram" name="instagram" placeholder="Masukkan Username Instagram kamu" value="{{ Auth::user()->social_instagran }}">
+                                                </div>
+                                                <span><small>instagram.com/<em>username_kamu</em></small></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-offset-3 col-sm-9">
+                                                <button type="submit" class="btn btn-danger">SUBMIT</button>
+                                            </div>
+                                        </div>
+                                        {{-- Youtube --}}
+                                        {{-- <div class="form-group">
+                                            <label for="facebook" class="col-sm3 control-label"><i class="fab fa-facebook fa-2x"></i></label>
+                                            <div class="col-sm-9">
+                                                <div class="form-line">
+                                                    <input type="test" class="form-control" id="facebook" name="facebook" placeholder="Masukkan Username Facebook kamu" value="{{ Auth::user()->social_facebook }}">
+                                                </div>
+                                                <span><small>facebook.com/<em>username_kamu</em></small></span>
+                                            </div>
+                                        </div> --}}
                                     </form>
                                 </div>
 
