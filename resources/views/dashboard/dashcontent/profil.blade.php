@@ -152,33 +152,33 @@
                                 <div role="tabpanel" class="tab-pane fade in" id="social_media">
                                     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
                                     <form action="{{ url('/dashboard/profil/socialupdate', $user) }}" class="form-horizontal" method="POST">
-                                        @csrf
+                                        {{ csrf_field() }}
                                         {{-- Facebook --}}
                                         <div class="form-group">
-                                            <label for="facebook" class="col-sm3 control-label"><i class="fab fa-facebook fa-2x"></i></label>
+                                            <label for="social_facebook" class="col-sm3 control-label"><i class="fab fa-facebook fa-2x"></i></label>
                                             <div class="col-sm-9">
                                                 <div class="form-line">
-                                                    <input type="text" class="form-control" id="facebook" name="facebook" placeholder="Masukkan Username Facebook kamu" value="{{ Auth::user()->social_facebook }}">
+                                                    <input type="text" class="form-control" id="facebook" name="social_facebook" placeholder="Masukkan Username Facebook kamu" value="{{ Auth::user()->social_facebook }}">
                                                 </div>
                                                 <span><small>facebook.com/<em>username_kamu</em></small></span>
                                             </div>
                                         </div>
                                         {{-- Twitter --}}
                                         <div class="form-group">
-                                            <label for="twitter" class="col-sm3 control-label"><i class="fab fa-twitter fa-2x"></i></label>
+                                            <label for="social_twitter" class="col-sm3 control-label"><i class="fab fa-twitter fa-2x"></i></label>
                                             <div class="col-sm-9">
                                                 <div class="form-line">
-                                                    <input type="text" class="form-control" id="twitter" name="twitter" placeholder="Masukkan Username Twitter kamu" value="{{ Auth::user()->social_twitter }}">
+                                                    <input type="text" class="form-control" id="twitter" name="social_twitter" placeholder="Masukkan Username Twitter kamu" value="{{ Auth::user()->social_twitter }}">
                                                 </div>
                                                 <span><small>twitter.com/<em>username_kamu</em></small></span>
                                             </div>
                                         </div>
                                         {{-- Instagram --}}
                                         <div class="form-group">
-                                            <label for="instagram" class="col-sm3 control-label"><i class="fab fa-instagram fa-2x"></i></label>
+                                            <label for="social_instagram" class="col-sm3 control-label"><i class="fab fa-instagram fa-2x"></i></label>
                                             <div class="col-sm-9">
                                                 <div class="form-line">
-                                                    <input type="test" class="form-control" id="instagram" name="instagram" placeholder="Masukkan Username Instagram kamu" value="{{ Auth::user()->social_instagran }}">
+                                                    <input type="test" class="form-control" id="instagram" name="social_instagram" placeholder="Masukkan Username Instagram kamu" value="{{ Auth::user()->social_instagran }}">
                                                 </div>
                                                 <span><small>instagram.com/<em>username_kamu</em></small></span>
                                             </div>
