@@ -7602,7 +7602,14 @@ fieldset[disabled] .form-control {
         overflow: hidden;
         font-size: 12px;
         max-width: 200px;
-        color: #fff; }
+        color: #fff; 
+        /* INI DIGUNAKAN UNTUK OUTLINE TEXT */
+        text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000; 
+      }        
       .sidebar .user-info .info-container .user-helper-dropdown {
         position: absolute;
         right: -3px;
@@ -7613,12 +7620,6 @@ fieldset[disabled] .form-control {
         box-shadow: none;
         cursor: pointer;
         color: #fff;
-        /* INI DIGUNAKAN UNTUK OUTLINE TEXT */
-        text-shadow:
-          -1px -1px 0 #000,
-          1px -1px 0 #000,
-          -1px 1px 0 #000,
-          1px 1px 0 #000; 
       }
   .sidebar .menu {
     position: relative;
