@@ -42,6 +42,7 @@
                 <span>Tag / Topik</span>
             </a>
         </li>
+        @if (in_array(Auth::user()->level_access, array('admin', 'moderator')))
         <li
         @if ($judul === 'Kategori')
         class="active"
@@ -52,6 +53,7 @@
                 <span>Kategori</span>
             </a>
         </li>
+        @endif
         <li class="header">Tanggapan Pengunjung</li>
         <li>
                 <a href="#">

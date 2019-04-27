@@ -2,6 +2,7 @@
 @section('content')
     <div class="container-fluit">
         <div>
+            @if (in_array(Auth::user()->level_access, array('admin', 'moderator'))) 
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
@@ -46,6 +47,24 @@
                     </div>
                 </div>
             </div>
+            @else
+            <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                                <style>
+                                    .asu {
+                                        animation-duration: 10s;
+                                        animation-delay: 2s;
+                                        animation-iteration-count: infinite;
+                                        }
+                                </style>
+                                <div class="alert alert-danger animated shake asu">
+                                    <strong>ANDA TIDAK MEMILIKI AKSES</strong>
+                                </div>
+                        </div>
+                    </div>
+                </div> 
+            @endif
         </div>
     </div>
 @endsection
