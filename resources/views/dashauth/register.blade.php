@@ -33,7 +33,7 @@
     <div class="signup-box">
         <div class="logo">
             <a href="{{ route('home') }}"><b>MediaBebas</b>.com</a>
-            <small>Teliti, Cerdas, Menghibur, Menyenangkan</small>
+            <small>Bebas Kupas Sampai Tuntas</small>
         </div>
         <div class="card">
             <div class="body">
