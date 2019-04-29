@@ -22,26 +22,26 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('/dashboard', 'Dashboard\DashboardController@index')->name('dashboard');
 
-Route::get('/dashboard/profil', 'ProfileController@redirectCok');
+Route::get('/dashboard/profil', 'Dashboard\ProfileController@redirectCok');
 
-Route::get('/dashboard/profil/{id}', 'ProfileController@edit')->name('profil');
+Route::get('/dashboard/profil/{id}', 'Dashboard\ProfileController@edit')->name('profil');
 
-Route::post('/dashboard/profil/updateinfo/{id}', 'ProfileController@informationUpdate');   //INFORMATION UPDATE
+Route::post('/dashboard/profil/updateinfo/{id}', 'Dashboard\ProfileController@informationUpdate');   //INFORMATION UPDATE
 
-Route::post('/dashboard/profil/ppupdate/{id}', 'ProfileController@profilephotoUpdate');     // PHOTO PROFILE UPDATE
+Route::post('/dashboard/profil/ppupdate/{id}', 'Dashboard\ProfileController@profilephotoUpdate');     // PHOTO PROFILE UPDATE
 
-Route::post('/dashboard/profil/socialupdate/{id}', 'ProfileController@socialmediaUpdate');  // INFORMATION OF SOCIAL NETWORKING USER
+Route::post('/dashboard/profil/socialupdate/{id}', 'Dashboard\ProfileController@socialmediaUpdate');  // INFORMATION OF SOCIAL NETWORKING USER
 
-Route::put('/dashboard/profil/passwordupdate', 'ProfileController@passwordUpdate')->name('password.update');
+Route::put('/dashboard/profil/passwordupdate', 'Dashboard\ProfileController@passwordUpdate')->name('password.update');
 
-Route::get('/register/buat-profil/{id}', 'ProfileController@create')->name('buat_profil');
+Route::get('/register/buat-profil/{id}', 'Dashboard\ProfileController@create')->name('buat_profil');
 
-Route::post('/register/buat-profil/store/{id}', ['as' => 'update_process_profile', 'uses' => 'ProfileController@store']);
+Route::post('/register/buat-profil/store/{id}', ['as' => 'update_process_profile', 'uses' => 'Dashboard\ProfileController@store']);
 
-Route::get('/dashboard/artikel', 'ArticleController@index')->name('artikel_dashboard');
+Route::get('/dashboard/artikel', 'Dashboard\ArticleController@index')->name('artikel_dashboard');
 
-Route::get('/dashboard/artikel/buat', 'ArticleController@create')->name('buat_artikel_dashboard');
+Route::get('/dashboard/artikel/buat', 'Dashboard\ArticleController@create')->name('buat_artikel_dashboard');
 
-Route::get('/dashboard/kategori', 'KategoriController@index')->name('kategori_dashboard');
+Route::get('/dashboard/kategori', 'Dashboard\KategoriController@index')->name('kategori_dashboard');
